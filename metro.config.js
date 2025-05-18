@@ -7,4 +7,4 @@ const { withNativeWind } = require('nativewind/metro');
 const config = getDefaultConfig(__dirname);
 
 // https://www.nativewind.dev/getting-started/installation#4-modify-your-metroconfigjs
-module.exports = withNativeWind(config, { input: './global.css' });
+module.exports = withNativeWind(config, { input: './app/global.css' });
