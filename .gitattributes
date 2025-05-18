@@ -1,0 +1,27 @@
+# .gitattributes
+#
+# Special file that tells Git how to handle specific files in our repository.
+# It controls things like line endings, file types, merge behavior, custom diff tools, and more.
+# This ensures consistent behavior for all users, regardless of their Git settings and environment.
+# https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings
+#
+
+# set the default behavior - Git to handle the files in whatever way it thinks is best
+* text=auto
+
+# explicitly set LF for specific file types
+*.json text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# declare binary files to prevent any line ending conversion
+*.png binary
+*.jpg binary
+*.svg binary
+*.woff binary
+*.woff2 binary
